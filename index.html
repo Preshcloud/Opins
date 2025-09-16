@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   
+
+  <header class="navbar">
+  <div class="logo">
+    <img src="./Opins logo.png" alt="Logo" />
+    <span></span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <button class="login-btn">Login</button>
+
+  </nav>
+  
+<div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <span class="close-btn" onclick="toggleMenu()">✖</span>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">App Screens</a>
+      <a href="#">Pricing</a>
+      <a href="#">Blog</a>
+      <button class="login-btn">Login</button>
+    </div>
+  </nav>
+
+  
+</header>
+
+
+
+
+  <section class="section">
+    <link rel="stylesheet" href="./2sec.css"> 
+    <!-- Left side -->
+    <div class="content">
+      <h1>Best Mobile App Template for your Business.</h1>
+      <p>
+        improving how your app appears in app stores (Google Play / Apple App Store) — things like the title, description, keywords, screenshots, and reviews. The goal is to make your app easier to discover when users search.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn"><i class="fa-solid fa-mobile-button"></i> Get in Google Play</a>
+        <a href="#" class="btn"><i class="fa-brands fa-apple"></i> Get in Play Store</a>
+      </div>
+    </div>
+
+    <!-- Right side -->
+    <div class="images">
+      <img src="./moving phone.png" alt="App screen">
+      
+
+    <!-- Floating bubble -->
+    <div class="bubble"></div>
+  </section>
+
+<!-- Counter Section -->
+ <link rel="stylesheet" href="./counter.css">
+<section class="counter-section">
+  <h3 class="counter-title">NUMBERS SPEAKS EVERYTHING</h3>
+  
+  <div class="counter-container">
+    <div class="counter-box">
+      <span class="counter" data-target="4789">0</span>
+      <p>DOWNLOADS</p>
+    </div>
+
+    <div class="counter-box">
+      <span class="counter" data-target="6400">0</span>
+      <p>LIKES</p>
+    </div>
+
+    <div class="counter-box">
+      <span class="counter" data-target="900">0</span>
+      <p>5 STAR RATING</p>
+    </div>
+
+    <div class="counter-box">
+      <span class="counter" data-target="266">0</span>
+      <p>AWARDS</p>
+    </div>
+  </div>
+</section>
+
+<section>
+    <link rel="stylesheet" href="./3sec.css"/>
+<div class="section-title">
+   
+    <h2>Effective tools for busy administrators.</h2>
+  </div>
+
+  <div class="features">
+    <div class="card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>High Creative App Display</h3>
+      <p>There are many variations of passages of lorem ipsum but majority have suffered.</p>
+      <a href="#">READ MORE</a>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-cogs"></i>
+      <h3>Unique and Custom Options</h3>
+      <p>There are many variations of passages of lorem ipsum but majority have suffered.</p>
+      <a href="#">READ MORE</a>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-lock"></i>
+      <h3>Secure and Perfect Integration</h3>
+      <p>There are many variations of apps and APIs.</p>
+      <a href="#">READ MORE</a>
+    </div>
+  </div>
+  </section>
+
+  
+
+  <section class="app-section">
+    <link rel="stylesheet" href="./4sec.css"/>
+    <!-- Left: Image -->
+    <div class="app-image">
+      <img src="https://opins-vue.vercel.app/_nuxt/img/moc-1-1.f6defb0.png" alt="Mobile App Mockup">
+    </div>
+
+    <!-- Right: Text -->
+    <div class="app-content">
+      <h2>Take a control on your mobile app.</h2>
+      <p>
+        “Experience the freedom to manage everything at your fingertips.”.
+      </p>
+
+      <ul>
+        <li><i class="fas fa-check"></i> Refresing to get such a personal touch.</li>
+        <li><i class="fas fa-check"></i> They save time with quick access to what you need.</li>
+        <li><i class="fas fa-check"></i> Apps bring convenience, speed, and comfort to daily tasks.</li>
+      </ul>
+
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+
+
+  <section class="tools-section">
+    <link rel="stylesheet" href="./5sec.css"/>
+    <!-- Left content -->
+    <div class="tools-content">
+      <h2>Powerful tools for your customers.</h2>
+      <p>
+They help businesses reach more customers directly.      </p>
+
+      <ul>
+        <li><i class="fas fa-check"></i> Refresing to get such a personal touch.</li>
+        <li><i class="fas fa-check"></i> They save time with quick access to what you need.</li>
+        <li><i class="fas fa-check"></i> They help businesses reach more customers directly.</li>
+      </ul>
+
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <!-- Right floating image -->
+    <div class="tools-image">
+      <img src="https://opins-vue.vercel.app/_nuxt/img/moc-1-2.efcd6e9.png" alt="Dashboard Mockup">
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <link rel="stylesheet" href="./6sec.css"/>
+    <div class="toggle-container">
+      <h2>Choose plans which suits your needs.</h2>
+      <div class="toggle-buttons">
+        <button class="toggle-btn active">Monthly</button>
+        <button class="toggle-btn" id="yearly-btn">Yearly</button>
+      </div>
+    </div>
+
+    <div class="cards-container">
+      <!-- Basic Pack -->
+      <div class="pricing-card basic">
+        <h3 class="price">$20.00</h3>
+        <p class="plan-title">BASIC PACK</p>
+        <ul>
+          <li>Extra features</li>
+          <li>Lifetime free support</li>
+          <li>Upgrade options</li>
+          <li>Full access</li>
+        </ul>
+        <button class="purchase-btn">Purchase</button>
+        <p class="note">NO HIDDEN CHARGES!</p>
+      </div>
+
+      <!-- Professional Pack -->
+      <div class="pricing-card professional">
+        <h3 class="price">$30.00</h3>
+        <p class="plan-title">PROFESSIONAL PACK</p>
+        <ul>
+          <li>Extra features</li>
+          <li>Lifetime free support</li>
+          <li>Upgrade options</li>
+          <li>Full access</li>
+        </ul>
+        <button class="purchase-btn">Purchase</button>
+        <p class="note">NO HIDDEN CHARGES!</p>
+      </div>
+
+      <!-- Business Pack -->
+      <div class="pricing-card business">
+        <h3 class="price">$40.00</h3>
+        <p class="plan-title">BUSINESS PACK</p>
+        <ul>
+          <li>Extra features</li>
+          <li>Lifetime free support</li>
+          <li>Upgrade options</li>
+          <li>Full access</li>
+        </ul>
+        <button class="purchase-btn">Purchase</button>
+        <p class="note">NO HIDDEN CHARGES!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonial-section">
+    <link rel="stylesheet" href="./7sec.css"/>
+    <div class="testimonial-container">
+      <!-- Left: Rotating Avatars -->
+      <div class="avatar-orbit">
+        <img src="https://opins-vue.vercel.app/_nuxt/img/map-1-1.d83aeaa.png" class="globe-bg" alt="globe background" />
+        <div class="orbiting-circle">
+          <img src="https://opins-vue.vercel.app/_nuxt/img/testi-1-6.316fc57.jpg" />
+        
+          <img src="https://opins-vue.vercel.app/_nuxt/img/testi-1-1.ce43669.jpg" />
+        </div>
+      </div>
+
+      <!-- Right: Testimonial Text -->
+      <div class="testimonial-text">
+        <h3><span class="dot"></span> What’s our clients are saying.</h3>
+        <p>This is due to their excellent service, competitive pricing and customer support. It's thoroughly refreshing to get such a personal touch. Apps bring convenience, speed, and comfort to daily tasks.</p>
+        <strong>Delila Rayam</strong>
+      </div>
+    </div>
+
+<!-- Envato Logos -->
+<div class="envato-slider-horizontal">
+  <div class="envato-track-horizontal">
+    <img src="https://opins-vue.vercel.app/_nuxt/img/brand-1-1.4da9fc8.png" alt="envato" height="30" width="30"/>
+    <img src="https://opins-vue.vercel.app/_nuxt/img/brand-1-1.4da9fc8.png" alt="envato" />
+    <img src="https://opins-vue.vercel.app/_nuxt/img/brand-1-1.4da9fc8.png" alt="envato" />
+    <img src="https://opins-vue.vercel.app/_nuxt/img/brand-1-1.4da9fc8.png" alt="envato" />
+    <img src="https://opins-vue.vercel.app/_nuxt/img/brand-1-1.4da9fc8.png" alt="envato" />
+    <img src="https://opins-vue.vercel.app/_nuxt/img/brand-1-1.4da9fc8.png" alt="envato" />
+    <!-- Repeat for loop illusion -->
+    <img src="https://opins-vue.vercel.app/_nuxt/img/brand-1-1.4da9fc8.png" alt="envato" />
+    <img src="https://opins-vue.vercel.app/_nuxt/img/brand-1-1.4da9fc8.png" alt="envato" />
+  </div>
+</div>
+  </section>
+
+
+
+
+
+  <section class="faq-section">
+    <link rel="stylesheet" href="./8sec.css"/>
+    <div class="faq-container">
+      <div class="faq-header">
+        <div class="faq-dot"></div>
+        <h2>Want to ask something<br>from us?</h2>
+      </div>
+
+      <!-- FAQ Items -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="question-text">Pre and post launch mobile app marketing pitfalls to avoid</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          Avoid spamming notifications, test thoroughly before launch, and track your marketing KPIs effectively.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="question-text">Boostup your application traffic is just a step away</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          Use ASO, run ad campaigns, and improve user onboarding for organic growth.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="question-text">How to update application new features</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          Implement CI/CD pipelines and inform users with changelogs inside the app or via email.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="question-text">How to connect with the support to improve app experience</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          Use integrated chat support or ticketing systems with response-time tracking.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./8secscript.js"></script>
+
+
+
+  <section class="news-section">
+    <link rel="stylesheet" href="./9sec.css"/>
+    <div class="news-header">
+      <div class="dot"></div>
+      <h2>Check out our latest<br>news & articles.</h2>
+    </div>
+
+    <div class="news-container">
+      <!-- Article 1 -->
+      <div class="news-card">
+        <div class="news-img">
+          <span class="date-badge">30 jUNE, 2025</span>
+          <img src="https://opins-vue.vercel.app/_nuxt/img/blog-1-1.053744a.png" alt="Article 1">
+        </div>
+        <div class="news-meta">
+          <span class="pink-text">By Admin</span> &nbsp; - &nbsp;
+          <span class="pink-text">2 Comments</span>
+        </div>
+        <h3 class="news-title">Pre and post launch mobile app marketing pitfalls to avoid</h3>
+        <p class="news-summary">
+          There are many variations of passages of available but majority have alteration in some by inject humour or random words.
+        </p>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="news-card">
+        <div class="news-img">
+          <span class="date-badge">30 June, 2025</span>
+          <img src="https://opins-vue.vercel.app/_nuxt/img/blog-1-2.62720f3.png" alt="Article 2">
+        </div>
+        <div class="news-meta">
+          <span class="pink-text">By Admin</span> &nbsp; - &nbsp;
+          <span class="pink-text">2 Comments</span>
+        </div>
+        <h3 class="news-title">Social currency high performance keywords or</h3>
+        <p class="news-summary">
+          There are many variations of passages of available but majority have alteration in some by inject humour or random words.
+        </p>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="news-card">
+        <div class="news-img">
+          <span class="date-badge">30 June 2025, </span>
+          <img src="https://opins-vue.vercel.app/_nuxt/img/blog-1-3.a7634af.png" alt="Article 3">
+        </div>
+        <div class="news-meta">
+          <span class="pink-text">By Admin</span> &nbsp; - &nbsp;
+          <span class="pink-text">2 Comments</span>
+        </div>
+        <h3 class="news-title">Prioritize these line items quarterly sales are at</h3>
+        <p class="news-summary">
+          There are many variations of passages of available but majority have alteration in some by inject humour or random words.
+        </p>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <link rel="stylesheet" href="./10sec.css"/>
+    <div class="subscribe-container">
+      <h2>Subscribe now to get <br>company news.</h2>
+      <div class="subscribe-form">
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit">Subscribe</button>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3><span class="dot-icon"></span>opins</h3>
+          <p>888 999 0000</p>
+          <p>needhelp@opins.com</p>
+          <p>855 road, brooklyn street<br>new york 600</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="link-column">
+            <h4>Explore</h4>
+            <a href="#">About</a>
+            <a href="#">Our Team</a>
+            <a href="#">Features</a>
+            <a href="#">Blog</a>
+            <a href="#">How it Works</a>
+          </div>
+
+          <div class="link-column">
+            <h4>Links</h4>
+            <a href="#">Help</a>
+            <a href="#">Support</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div class="link-column">
+            <h4>Follow</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; copyright 2019 by <a href="#">Layerdrops.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach(counter => {
+    counter.innerText = "0";
+
+    const updateCounter = () => {
+      const target = +counter.getAttribute("data-target");
+      const count = +counter.innerText;
+
+      const increment = target / 200; // speed factor
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCounter, 10);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCounter();
+  });
+});
+</script>
+
+
+</body>
+</html>

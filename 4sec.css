@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Section Layout */
+.app-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+/* Left Image */
+.app-image img {
+  max-width: 100%;
+  width: 600px;
+  animation: bounce 3s infinite;
+}
+
+ @keyframes float {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-100px, -50px); }
+      50% { transform: translate(-50px, 100px); }
+      75% { transform: translate(100px, -80px); }
+      100% { transform: translate(0, 0); }
+    }
+
+
+/* Right Content */
+.app-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.app-content h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.app-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* List */
+.app-content ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.app-content ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.app-content ul li i {
+  color: #a64ca6;
+  margin-right: 10px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #fff;
+  border: 2px solid #a64ca6;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #e1bee7;
+  color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .app-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-content {
+    text-align: center;
+  }
+
+  .app-content ul {
+    text-align: left;
+    display: inline-block;
+  }
+}

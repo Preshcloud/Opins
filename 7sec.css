@@ -1,0 +1,184 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+}
+
+.testimonial-section {
+  background-color: #f1fef5;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Globe background */
+.globe-bg {
+  position: absolute;
+  width: 400px;
+  opacity: 0.1;
+  filter: grayscale(100%);
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Rotating avatars */
+.avatar-orbit {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+.orbiting-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 60s linear infinite;
+}
+
+.orbit {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.orbit1 { top: 0; left: 50%; transform: translateX(-50%); }
+.orbit2 { top: 50%; left: 0; transform: translateY(-50%); }
+.orbit3 { bottom: 0; left: 50%; transform: translateX(-50%); }
+.orbit4 { top: 50%; right: 0; transform: translateY(-50%); }
+.orbit5 { top: 10%; right: 10%; }
+
+.main-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Text content */
+.testimonial-text {
+  max-width: 500px;
+  padding: 20px;
+  z-index: 2;
+}
+.testimonial-text h3 {
+  font-size: 24px;
+  color: #1c2a4d;
+  margin-bottom: 20px;
+}
+.testimonial-text .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #00c47c;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.testimonial-text p {
+  color: #586477;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.testimonial-text strong {
+  font-size: 14px;
+  color: #1c2a4d;
+}
+
+/* Envato Horizontal Logo Slider */
+.envato-slider-horizontal {
+  overflow: hidden;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.envato-track-horizontal {
+  display: flex;
+  gap: 40px;
+  width: fit-content;
+  animation: slideHorizontal 20s steps(6, end) infinite;
+  align-items: center;
+}
+
+.envato-track-horizontal img {
+  height: 40px;
+  opacity: 0.6;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.envato-track-horizontal img:hover {
+  opacity: 1;
+  filter: brightness(0.3);
+}
+
+/* Horizontal sliding + pause */
+@keyframes slideHorizontal {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .envato-track-horizontal {
+    gap: 30px;
+    animation-duration: 25s;
+  }
+
+  .envato-track-horizontal img {
+    height: 30px;
+  }
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .globe-bg {
+    width: 250px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .testimonial-text {
+    padding: 10px;
+  }
+}
